@@ -3,6 +3,7 @@ class WelcomeController < ApplicationController
   end
 
   def about
+    #puts comment 
   end
 
   def contacts
