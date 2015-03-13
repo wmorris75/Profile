@@ -37,16 +37,27 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
   the DOM. jQuery is fast and easy to use, but it doesn't do anything
   you can't accomplish with vanilla (regular) JavaScript.
   -->
-  <script src="js/jQuery.js"></script>
+
+  <!--
+  <script src="assets/javascripts/jQuery.js"></script>
 
   <!-- More on helper.js in the class -->
-  <script src="js/helper.js"></script>
-
+  <!--
+  <script src="assets/javascripts/resume/helper.js"></script>
+  -->
   <!--
   Uncomment the <script> tag below when you're ready to add an interactive
   Google Map to your resume!
   -->
+
+  <!--
   <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+-->
+
+
+  <%= javascript_include_tag 'resume/helper' %>
+  <%= javascript_include_tag 'jQuery' %>
+  <%= javascript_include_tag 'http://maps.googleapis.com/maps/api/js?libraries=places' %>
 
   <meta name="viewport" content="width=device-width">
 </head>
@@ -88,8 +99,10 @@ The next line tells the browser where to download the JavaScript file you'll be
 writing. In resumeBuilder.js, you'll be writing code that builds the resume
 dynamically when this website, index.html, is opened.
 -->
-<script src="js/resumeBuilder.js"></script>
-
+<%= javascript_include_tag 'resume/resumeBuilder' %>
+<!--
+<script src="assets/javascripts/resume/resumeBuilder.js"></script>
+-->
 
 <!--
 These scripts are written in JavaScript. You'll be breaking them down as part of

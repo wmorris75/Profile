@@ -101,7 +101,8 @@ a {
 
 .white-text {
     font-weight: bold;
-    color: #FFFFFF;
+    color: cornsilk;
+    text-align: left;
 }
 
 .gray {
