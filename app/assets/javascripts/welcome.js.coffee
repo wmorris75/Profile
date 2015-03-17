@@ -2,7 +2,7 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 require 'jquery'
-require 'helper.js'
+require 'helper.js.erb'
 require 'bootstrap.min'
 require 'resumeBuilder.js'
 //= require resume

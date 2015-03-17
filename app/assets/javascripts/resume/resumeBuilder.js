@@ -15,10 +15,9 @@ var bio = {
     "skills":["Java", "Ruby", "Python", "PHP", "C++", "Javascript",  "JQuery", "Ruby on Rails", "HTML", "CSS", "Spring Framework", "Android",
         "MySQL", "PostgreSQL", "Oracle","GoogleMap API", "Windows", "Linux/Unix OS and Servers", "MongoDB", "Amazon Web Services",
         "Redis", "ElasticSearch", "REST"],
-    "biopic":"assets/images/resume/fry.jpg",
+    "biopic":"/assets/resume/profile_pic.jpg",
     "contacts": {"location" :  "Lauderhill, FL"}
 }
-
 
 var formattedName = HTMLheaderName.replace("%data%", bio.name);
 var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
@@ -43,6 +42,7 @@ $("#topContacts").prepend(formattedContacts);
 
 var formattedImage = HTMLbioPic.replace("%data%", bio.biopic);
 $("#header").prepend(formattedImage);
+
 
 if (bio.skills.length > 0){
     $("#header").append(HTMLskillsStart);
@@ -200,7 +200,7 @@ var projects = {
                 "Each architectural style was mathematically modelled for which the DTMC was applied to each software system components based on its "+
                 "architectural style to determine reliability of the overall software system",
             "images":[
-                "images/fault_tolerance_image.jpg"
+                "/assets/project/fault_tolerance_image.jpg"
             ]
         },
         {
@@ -208,9 +208,9 @@ var projects = {
             "dates":"May 2012",
             "description": "Developed an application using the GoogleMap API for users to conveniently navigate and locate buildings and departments " +
                 "on the Andrews University Campus. Sample screen shots of the application are provided below.",
-            "images":["images/main.jpg", "images/tracking.jpg", "images/view_submenu.png", "images/view_submenu_options.png",
-                "images/running_ad.png", "images/real_time_geotracking.png", "images/finding_dest_path.png",
-                "images/geo_position.png"]
+            "images":["/assets/project/main.jpg", "/assets/project/tracking.jpg", "/assets/project/view_submenu.png", "/assets/project/view_submenu_options.png",
+                "/assets/project/running_ad.png", "/assets/project/real_time_geotracking.png", "/assets/project/finding_dest_path.png",
+                "/assets/project/geo_position.png"]
         }]
 }
 
