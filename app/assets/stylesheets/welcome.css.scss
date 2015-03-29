@@ -1,3 +1,26 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.main-title {
+  font-style: italic;
+  font-size: 18px;
+  color: cornsilk;
+  line-height: 28px;
+  text-align: left;
+  background: darkblue;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.main-menu{
+  background:orange;
+  text-align:center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-size: 15px;
+}
+
+.border-layout{
+  padding-left: 0px;
+  text-align: left;
+}
