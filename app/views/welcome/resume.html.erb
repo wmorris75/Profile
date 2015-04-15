@@ -5,18 +5,18 @@
 
   <!-- Tells the browser what the title of this page should be. -->
   <title>Resume</title>
-
   <link href="/assets/stylesheets/style" rel="stylesheet" type="text/css">
-
   <%= javascript_include_tag 'resume/helper' %>
   <%= javascript_include_tag 'jQuery' %>
   <%= javascript_include_tag 'http://maps.googleapis.com/maps/api/js?libraries=places' %>
 
   <meta name="viewport" content="width=device-width">
-</head>
-    <body unresolved>
-        <div id="main">
 
+</head>
+
+    <body unresolved>
+
+        <div id="main">
           <div id="header" class="center-content clearfix">
             <ul id="topContacts" class='flex-box'></ul>
           </div>
@@ -73,5 +73,5 @@
                 document.getElementById('mapDiv').style.display = 'black';
             }
         </script>
-    </body>
-</html>
+
+       <%=render file: 'layouts/footer-content'%>
