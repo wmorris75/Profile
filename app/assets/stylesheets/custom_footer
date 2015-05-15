@@ -1,0 +1,30 @@
+/*html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by custom_footer height */
+/*  margin-bottom: 60px;
+}*/
+.custom_footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the custom_footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky custom_footer method. */
+
+.foot_container {
+  width: auto;
+  max-width: 680px;
+  padding: 0 15px;
+}
+.foot_container .text-muted {
+  margin: 20px 0;
+}
