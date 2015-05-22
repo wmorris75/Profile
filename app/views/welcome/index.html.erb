@@ -1,49 +1,54 @@
+
 <%=render file: '/app/views/layouts/title-content'%>
 
-<!-- <head>
+<head>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <link href="assets/stylesheets/roll_in_animation" rel="stylesheet" type="text/css">
-</head> -->
-<!-- <h1 class="animated infinite bounce">Example</h1> -->
-        <div class="container" style="padding-left: 150px; padding-right: 150px">
+</head>
+
+    <div class="home_container">
+        <div class="container" style="background: green;">
           <div class="row">
-            <div style="text-align:left">
+            <div style="text-align:left; height:800px">
               <h3 style="padding-left: 0px"> Hello! </h3>
-              <div>
-                  <p>
+              <p>
+                 Welcome to waynemorris.com which higlights and provides details of my background and professional experience. 
+                 I am an engineering graduate who immensely enjoy working to solve problems through science and engineering in order 
+                 to positively impact lives and making a better society.
+              </p>
+              <p>
+                 Please feel free to navigate through the content of the site and you may <a href="#" style="display:inline">contact</a> me as you find necessary to explore the possibilities of how I may be of service to meet your needs.
+              </p>
+              <p>This site was built mainly to provide a public domain for my profile and to use the opportunity to play around
+                 with Ruby on Rails, HTML, CSS, Javascript and JQuery in its construction.
+              </p>
+              <p>
+                 Some components of the site are still under construction. These components will be available as soon as they are completed.
+              </p>
 
-                    Having graduated with a Bachelor's degree in Chemical Engineering and a Master's in Software Engineering with
-                    more than 5 years professional experience, I have a diverse background of knowledge and experience that
-                    encompasses the areas of Computer Science, Engineering, Mathematics, Natural Sciences and Management. I am
-                    equipped with the relevant skills in providing solutions for products, services and unprecedented improvements
-                    in the quality of life overall. I have a passion for solving everyday problems through the use of science and
-                    technology, and to offer my services where I am able to make my most effective contributions in impacting lives
-                    positively.
-                  </p>
-
-                  <p>
-                    I am not only interested in being just a player but also a creator and an innovator in being a part of a group
-                    that is always seeking ways to provide solutions for improving science and technology that can be applied to
-                    make the delivery of products and services more efficient and beneficial to society.
-                  </p>
-
-                  <p>
-
-                    Please feel free to take a look at my resume and professional projects for further details. Please also visit my
-                    github page for further details on some projects that I have worked on.
-                  </p>
-
-                  <p>
-                    I thank you for taking the time out to familiarize yourself with my background and to see how I may be of
-                    service to meeting your needs. Please click here for contact details.
-                  </p>
-
-                  <p>
-                    Thank you.
-                  </p>
+              <div id="areas">
+                    <h1></h1>
                </div>
             </div>
           </div>
         </div>
-      </div>
+    </div>
+
+   
+
+<script type="text/javascript">
+        var classes = ['Welcome!','I am delighted for your visit to my site', 'I am Wayne Morris','An Engineering Graduate','With degrees both in Software Engineering and Chemical Engineering', 'Experience includes:', 'Engineering and Environmental Consulting', 'Software Development', 'Project Management', 'Please continue to explore my site for further details', 'Thank you for visiting!'];
+        (function displayClass(i) {
+        $('#areas h1').text(classes[i]).fadeIn(1000, function() {
+            $(this).delay(600).fadeOut(1000, function() {
+                displayClass((i + 1) % classes.length);
+            });
+        });
+    })(0);
+
+ </script>
 
 <%=render file: '/app/views/layouts/footer-content'%>
+
+
+

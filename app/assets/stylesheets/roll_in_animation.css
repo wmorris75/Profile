@@ -2451,6 +2451,9 @@ Copyright (c) 2015 Daniel Eden
 .rotateOutUpLeft {
   -webkit-animation-name: rotateOutUpLeft;
   animation-name: rotateOutUpLeft;
+   -webkit-animation-duration: 3s;
+  /*-webkit-animation-delay: 2s;*/
+  -webkit-animation-iteration-count: 10;
 }
 
 @-webkit-keyframes rotateOutUpRight {
