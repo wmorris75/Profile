@@ -25,16 +25,6 @@
   text-align: left;
 }
 
-.ho_container {
-  height: 900px;
-  width: 1170px;
-  padding-left: 150px;
-  padding-right: 150px;
-  background: blue;
-  border-left-width: 354px;
-  margin-left: 375px;
-  margin-right: auto;
-}
 
 .home_container{
   padding-right: 15px;
@@ -44,14 +34,21 @@
   height: 800px;
 }
 
+
+
 #areas{
-  padding-top: 200px;
-  font-style: italic;
-  font-size: 25px;
-  color: cornsilk;
-    h1 {
-        font-size:50px;
-        padding-left: 200px;
-    }
-}
+    top:100px;
+    height: 10em;
+    position: relative;
+    horizontal-align:middle;
+    background:blue; }              /* 1 */
+#areas h1 {
+   margin: 0;
+   padding-left:150px;
+    padding-right:50px;
+   position: absolute;               /* 2 */
+   top: 50%;                         /* 3 */
+   transform: translate(0, -50%) ;
+   }
+
 
