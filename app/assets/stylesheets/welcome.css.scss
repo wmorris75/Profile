@@ -32,23 +32,46 @@
   margin-right: auto;
   margin-left: auto;
   height: 800px;
+  padding-bottom:200px;
 }
 
-
-
 #areas{
-    top:100px;
+    top:12px;
     height: 10em;
     position: relative;
     horizontal-align:middle;
-    background:blue; }              /* 1 */
+    background:darkblue;
+    box-shadow: 10px 10px 5px darkgreen;
+     }             
 #areas h1 {
    margin: 0;
    padding-left:150px;
-    padding-right:50px;
-   position: absolute;               /* 2 */
-   top: 50%;                         /* 3 */
+   padding-right:50px;
+   position: absolute;              
+   top: 50%;                         
    transform: translate(0, -50%) ;
    }
 
+.content {
+  font-size:20px;
+}
+.content p{
+  font-size:15px;
+  font-family: 'Lora', serif;
+}
 
+.content div li{
+  font-size:15px;
+  font-family: 'Lora', serif;
+}
+
+.project_carousel{
+    font-size:15px;
+    font-family: 'Lora', serif;
+
+}
+
+.project_carousel h2{
+   padding-left:0px;
+   padding-right:0px;
+}
