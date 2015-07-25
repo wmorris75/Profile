@@ -8,7 +8,7 @@
 
 var bio = {
     "name": "Wayne Morris, MSc., B.Eng.",
-    "role": "",
+    "role": "Engineer",
     "mobile": "954-864-7655",
     "email": "waynemorris75@gmail.com",
     "github":"wmorris75",
@@ -173,7 +173,6 @@ function displayWork(){
 
         for (duty in work.jobs[job].description.duties){
             var formattedDuties = HTMLworkDescriptionDuty.replace("%data%", work.jobs[job].description.duties[duty]);
-            console.log(formattedDuties);
             $(".work_details:last").append(formattedDuties);
         }
     }
@@ -297,8 +296,35 @@ certifications.display = function () {
 certifications.display();
 
 
+$(document).click(function(loc) {
+    // your code goes here!
+    var x = loc.pageX;
+    var y = loc.pageY;
+
+    logClicks(x, y);
+});
 //Load map on page
- $("#main").append(internationalizeButton);
+
+$(document).ready(function() {
+  $('button').click(function() {
+    var iName = inName(bio.name) || function(){};
+    $('#name').html(iName);  
+  });
+});
+
+function inName(name){
+    name = name.trim().split(" ");
+    console.log(name);
+    name[1]=name[1].toUpperCase();
+    name[0]=name[0].slice(0,1).toUpperCase() + name[0].slice(1).toLowerCase();
+
+    return name[0] + " " +name[1];
+
+}
+
+
+
+$("#main").append(internationalizeButton);
 $("#mapDiv").append(googleMap);
 initializeMap();
-pinPoster(locationFinder());
+// pinPoster(locationFinder());
