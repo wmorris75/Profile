@@ -6,35 +6,43 @@
   <!-- Tells the browser what the title of this page should be. -->
   <title>Resume</title>
   <link href="/assets/stylesheets/style" rel="stylesheet" type="text/css">
+  <link href = "/vendor/assets/stylesheets">
   <%= javascript_include_tag 'resume/helper' %>
   <%= javascript_include_tag 'jQuery' %>
   <%= javascript_include_tag 'http://maps.googleapis.com/maps/api/js?libraries=places' %>
 
   <meta name="viewport" content="width=device-width">
-
 </head>
 
     <body unresolved>
-
         <div id="main">
           <div id="header" class="center-content clearfix">
             <ul id="topContacts" class='flex-box'></ul>
           </div>
           <div style='clear: both;'></div>
+
+          <form style="background-color:#F3F3F3; text-align:right"><INPUT Type="button" VALUE="Back" onClick="history.go(-1);return true;"></form>
+          
           <div id="workExperience" class='gray'>
             <h2>Work Experience</h2>
           </div>
+
           <div id="projects">
-            <h2>Projects</h2>
+             <h2>
+                 <%= link_to "Projects - Click here", welcome_projects_path, {:style=>'color:#999999;'} %>
+            </h2>
           </div>
           <div id="education" class='gray'>
             <h2>Education</h2>
+          </div>
+          <div id="certifications">
+            <h2>Extra Courses and Professional Development</h2>
           </div>
           <div id="mapDiv">
             <h2>Where I've Lived and Worked</h2>
           </div>
           <div id="letsConnect" class='dark-gray'>
-            <h2 class='orange center-text'>Let's Connect</h2>
+            <h2 class='orange center-text'><%= link_to  "Let's Connect", welcome_contacts_path %></h2>
             <ul id="footerContacts" class="flex-box">
             </ul>
           </div>
@@ -64,6 +72,10 @@
                 // document.getElementById('education').style.display = 'none';
                 document.getElementById('projects').style.display = 'black';
             }
+             if (document.getElementsByClassName('certifications-entry').length === 0) {
+                // document.getElementById('education').style.display = 'none';
+                document.getElementById('certifications').style.display = 'black';
+            }
             if (document.getElementsByClassName('flex-item').length === 0) {
                 // document.getElementById('letsConnect').style.display = 'none';
                 document.getElementById('letsConnect').style.display = 'black';
@@ -74,4 +86,13 @@
             }
         </script>
 
-       <%=render file: 'layouts/footer-content'%>
+<footer>
+<center>
+     <p style="background:black; color:#777; font-size:14px">
+      Created by Wayne Morris.
+      <br>Email: waynemorris75@gmail.com<br>
+      ©2015 Wayne Morris. All rights reserved.
+    </p>
+</center>
+</footer>
+

@@ -12,9 +12,9 @@ var bio = {
     "mobile": "954-864-7655",
     "email": "waynemorris75@gmail.com",
     "github":"wmorris75",
-    "skills":["Java", "Ruby", "Python", "PHP", "C++", "Javascript",  "JQuery", "Ruby on Rails", "HTML", "CSS", "Spring Framework", "Android",
-        "MySQL", "PostgreSQL", "Oracle","GoogleMap API", "Windows", "Linux/Unix OS and Servers", "MongoDB", "Amazon Web Services",
-        "Redis", "ElasticSearch", "REST"],
+    "skills":["Java,", "Ruby,", "Python,", "PHP,", "C++,", "Javascript,",  "JQuery,", "Ruby on Rails,", "HTML,", "CSS,", "Spring Framework,", "Android,",
+        "MySQL,", "PostgreSQL,", "Oracle,","GoogleMap API,", "Windows,", "Linux/Unix OS and Servers,", "MongoDB,", "Amazon Web Services,",
+        "Redis,", "ElasticSearch,", "REST."],
     "biopic":"/assets/resume/profile_pic.jpg",
     "contacts": {"location" :  "Lauderhill, FL"}
 }
@@ -88,7 +88,7 @@ for(school in education.schools){
     var schoolDates = HTMLschoolDates.replace("%data%", education.schools[school].date);
     $(".education-entry:last").append(schoolDates);
 
-    var schoolLocation = HTMLschoolLocation.replace("%data%", education.schools[school].city);
+    var schoolLocation = HTMLschoolLocation.replace("%data%", education.schools[school].contacts.location);
     $(".education-entry:last").append(schoolLocation);
 
     var schoolMajor = HTMLschoolMajor.replace("%data%", education.schools[school].major);
@@ -154,6 +154,9 @@ function displayWork(){
         var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
         var formattedEmployerTitle = formattedEmployer.replace("%data%", formattedTitle) + formattedTitle;
 
+        var location = HTMLworkLocation.replace("%data%", work.jobs[job].contacts.location);
+        $(".work-entry:last").append(location);
+        
 
         //last makes sure its added to the last html element
         $(".work-entry:last").append(formattedEmployerTitle);
@@ -177,72 +180,125 @@ function displayWork(){
 }
 displayWork();
 
-var projects = {
-    "projects":[
+// var projects = {
+//     "projects":[
+
+//         {
+//             "title":"waynemorris.com",
+//             "dates":"March 2015",
+//             "description":"waynemorris.com is built with the Ruby on Rails framework. It was a project that was developed to highlight my skills " +
+//                 "as a software developer and to show case my professional experience which includes " +
+//                 "project management, professional consulting, engineering and software developmet.",
+//             "images":[]
+//         },
+
+//         {
+//             "title": "Thesis project: A Hierarchical Framework for Estimating Heterogeneous " +
+//                 "Architecture Based Software Reliability",
+//             "dates": "August 2014",
+//             "description":"This project details the proposal of a mathematical model using Discrete Time Markov's Chain (DTMC) " +
+//                 "to determine software reliability based on the reliability of individual software components within a system. " +
+//                 "The proposed model takes into consideration the heterogeneity of the different software systems, which includes: " +
+//                 "Batch-Sequential/Pipeline Architectural Style, Parellel-Pipe style, Fault Tolerance and Call and Return Architecture style." +
+//                 "Each architectural style was mathematically modelled for which the DTMC was applied to each software system components based on its "+
+//                 "architectural style to determine reliability of the overall software system",
+//             "images":[
+//                 "/assets/project/fault_tolerance_image.jpg"
+//             ]
+//         },
+//         {
+//             "title":"Campus Navigation System(CNS)",
+//             "dates":"May 2012",
+//             "description": "Developed an application using the GoogleMap API for users to conveniently navigate and locate buildings and departments " +
+//                 "on the Andrews University Campus. Sample screen shots of the application are provided below.",
+//             "images":["/assets/project/main.jpg", "/assets/project/tracking.jpg", "/assets/project/view_submenu.png", "/assets/project/view_submenu_options.png",
+//                 "/assets/project/running_ad.png", "/assets/project/real_time_geotracking.png", "/assets/project/finding_dest_path.png",
+//                 "/assets/project/geo_position.png"]
+//         }]
+// }
+
+
+
+// projects.display = function () {
+//     for(project in projects.projects){
+//         $("#projects").append(HTMLprojectStart);
+
+//         var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
+//         //last makes sure its added to the last html element
+//         $(".project-entry:last").append(formattedTitle);
+
+//         var formattedDates = HTMLprojectDates.replace("%data%", projects.projects[project].dates);
+//         $(".project-entry:last").append(formattedDates);
+
+//         var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
+//         $(".project-entry:last").append(formattedDescription);
+
+//         if (projects.projects[project].images.length > 0){
+//             for(image in projects.projects[project].images){
+//                 var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].images[image]);
+//                 $(".project-entry:last").append(formattedImage);
+//             }
+//         }
+
+//     }
+// }
+
+// projects.display();
+
+var certifications = {
+    "certification":[
 
         {
-            "title":"waynemorris.com",
-            "dates":"March 2015",
-            "description":"waynemorris.com is built with the Ruby on Rails framework. It was a project that was developed to highlight my skills " +
-                "as a software developer and to show case my professional experience which includes " +
-                "project management, professional consulting, engineering and software developmet.",
+            "title":"Programming Cloud Services for Android Handheld Systems",
+            "dates":"September 2014",
+            "organization":"Coursera",
             "images":[]
         },
 
         {
-            "title": "Thesis project: A Hierarchical Framework for Estimating Heterogeneous " +
-                "Architecture Based Software Reliability",
-            "dates": "August 2014",
-            "description":"This project details the proposal of a mathematical model using Discrete Time Markov's Chain (DTMC) " +
-                "to determine software reliability based on the reliability of individual software components within a system. " +
-                "The proposed model takes into consideration the heterogeneity of the different software systems, which includes: " +
-                "Batch-Sequential/Pipeline Architectural Style, Parellel-Pipe style, Fault Tolerance and Call and Return Architecture style." +
-                "Each architectural style was mathematically modelled for which the DTMC was applied to each software system components based on its "+
-                "architectural style to determine reliability of the overall software system",
-            "images":[
-                "/assets/project/fault_tolerance_image.jpg"
-            ]
+            "title": "Pattern-Oriented Software Architectures: Programming Mobile Services for Android Handheld Systems",
+            "dates": "July 2014",
+            "organization":"Coursera",
+            "images":[]
         },
         {
-            "title":"Campus Navigation System(CNS)",
-            "dates":"May 2012",
-            "description": "Developed an application using the GoogleMap API for users to conveniently navigate and locate buildings and departments " +
-                "on the Andrews University Campus. Sample screen shots of the application are provided below.",
-            "images":["/assets/project/main.jpg", "/assets/project/tracking.jpg", "/assets/project/view_submenu.png", "/assets/project/view_submenu_options.png",
-                "/assets/project/running_ad.png", "/assets/project/real_time_geotracking.png", "/assets/project/finding_dest_path.png",
-                "/assets/project/geo_position.png"]
+            "title":"Web Applications Architecture using Ruby on Rails",
+            "dates":"June 2014",
+            "organization":"Coursera",
+            "images":[]
+        },
+        {
+            "title": "Project Design, Management and Implementation ",
+            "dates": "March 2014",
+            "organization":"Management Institute of National Development",
+            "images":[]
         }]
 }
 
 
 
-projects.display = function () {
-    for(project in projects.projects){
-        $("#projects").append(HTMLprojectStart);
+certifications.display = function () {
+    for(cert in certifications.certification){
+        $("#certifications").append(HTMLcertificationsStart);
 
-        var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
+        var formattedDates = HTMLdate.replace("%data%", certifications.certification[cert].dates);
+        var formattedDescription = HTMLorganization.replace("%data%", certifications.certification[cert].organization) + formattedDates;
+        $(".certifications-entry:last").append(formattedDescription);
+
+        var formattedDates = HTMLdate.replace("%data%", certifications.certification[cert].dates);
+        // $(".certifications-entry:last").append(formattedDates);
+
+        var formattedTitle = HTMLcertTitle.replace("%data%", certifications.certification[cert].title);
         //last makes sure its added to the last html element
-        $(".project-entry:last").append(formattedTitle);
-
-        var formattedDates = HTMLprojectDates.replace("%data%", projects.projects[project].dates);
-        $(".project-entry:last").append(formattedDates);
-
-        var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
-        $(".project-entry:last").append(formattedDescription);
-
-        if (projects.projects[project].images.length > 0){
-            for(image in projects.projects[project].images){
-                var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].images[image]);
-                $(".project-entry:last").append(formattedImage);
-            }
-        }
+        $(".certifications-entry:last").append(formattedTitle);
 
     }
 }
+certifications.display();
 
-projects.display();
 
-$("#main").append(internationalizeButton);
+//Load map on page
+ $("#main").append(internationalizeButton);
 $("#mapDiv").append(googleMap);
 initializeMap();
 pinPoster(locationFinder());
