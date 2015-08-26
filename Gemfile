@@ -32,9 +32,14 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+
+
 group :development do
     gem 'capistrano',         require: false
-    gem 'capistrano-rvm',     require: false
+    gem 'capistrano-rbenv', '~> 2.0' # required
+    gem 'capistrano-rbenv-install', '~> 1.2.0'
+
+    # gem 'capistrano-rvm',     require: false
     gem 'capistrano-rails',   require: false
     gem 'capistrano-bundler', require: false
     gem 'capistrano3-puma',   require: false
