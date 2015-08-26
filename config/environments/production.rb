@@ -36,7 +36,7 @@ Projects::Application.configure do
   config.assets.version = '1.0'
 
   #This is to add debugging tool
-  config.assest.debug = true
+  config.assets.debug = true
 
   # Specifies the header that your server uses for sending files.
   # config.action_dispatch.x_sendfile_header = "X-Sendfile" # for apache
