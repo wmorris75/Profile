@@ -1,3 +1,266 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+
+
+ */
+
+* {
+    padding:0;
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+.education-entry, .work-entry, .project-entry, .certifications-entry {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+h1 {
+    font-size: 40px;
+    color: #F5A623;
+    line-height: 48px;
+    display: inline;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 24px;
+    color: #999999;
+    line-height: 29px;
+    padding: 10px;
+}
+
+h3 {
+    font-style: italic;
+    font-size: 20px;
+    color: #000000;
+    line-height: 22px;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 14px;
+    color: #4A4A4A;
+    line-height: 17px;
+}
+
+h2, h3, h4, h5 {
+    padding:10px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+
+.date-text {
+    font-style: italic;
+    font-size: 14px;
+    color: #999999;
+    line-height: 16px;
+    float: left;
+}
+
+.location-text {
+    font-style: italic;
+    font-size: 14px;
+    color: #999999;
+    line-height: 16px;
+    float: right;
+
+}
+
+p {
+    font-size: 14px;
+    color: #333333;
+    line-height: 21px;
+}
+
+a {
+    color: #1199C3;
+    text-decoration: none;
+    margin-top: 10px;
+    display: block;
+}
+
+.welcome-message {
+    font-style: italic;
+    font-size: 18px;
+    color: #F3F3F3;
+    line-height: 28px;
+}
+
+#skillsH3 {
+    color: #F5AE23;
+    display: none;
+}
+
+.orange {
+    background-color: #F5AE23;
+}
+
+.orange-text {
+    color: #F5AE23;
+}
+
+.white-text {
+    font-weight: bold;
+    color: cornsilk;
+    text-align: left;
+}
+
+.gray {
+    background-color: #F3F3F3;
+    padding-bottom: 10px;
+    clear:both;
+}
+
+.dark-gray {
+    background-color: #4A4A4A;
+}
+
+/* TODO: Replace with image later */
+#header {
+    background-color: #484848;
+}
+
+.flex-box {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.center-content {
+    padding-top: 2.5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 2.5%
+}
+
+ul {
+    list-style-type: none;
+}
+
+.biopic {
+    float: left;
+    padding: 10px;
+    width: 200px;
+    display: none;
+}
+
+img {
+    padding: 10px;
+}
+
+/* Bar chart stuff */
+.chart div {
+    font: 10px sans-serif;
+    background-color: #4A4A4A;
+    text-align: right;
+    padding: 3px;
+    margin: 1px;
+    height: 12px;
+    color: white;
+    display: inline-block;
+}
+
+span {
+    padding: 5px;
+}
+
+#letsConnect {
+    text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+    #letsConnect {
+        margin-top: 5%;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .biopic {
+        width: 175px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    #letsConnect {
+        margin-top: 10%;
+    }
+    .biopic {
+        width: 150px;
+    }
+    .welcome-message {
+        display: none;
+    }
+}
+
+#map {
+    display: block;
+    height: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#mapDiv {
+    height: 1000px;
+    width: 100%;
+    padding-bottom: 5%;
+}
+
+@media only screen and (min-width: 750px) {
+    #skillsH3,
+    .biopic {
+        display: block;
+    }
+}
+/*html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by custom_footer height */
+/*  margin-bottom: 60px;
+}*/
+
+.custom_footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the custom_footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky custom_footer method. */
+
+.foot_container {
+  width: auto;
+  max-width: 680px;
+  padding: 0 15px;
+}
+.foot_container .text-muted {
+  margin: 20px 0;
+}
 @charset "UTF-8";
 
 /*!
@@ -3272,4 +3535,90 @@ Copyright (c) 2015 Daniel Eden
 .slideOutUp {
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp;
+}
+/* line 4, /home/wayne/profile/app/assets/stylesheets/welcome.css.scss */
+.main-title {
+  font-style: italic;
+  font-size: 18px;
+  color: cornsilk;
+  line-height: 28px;
+  text-align: left;
+  background: darkblue;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+/* line 15, /home/wayne/profile/app/assets/stylesheets/welcome.css.scss */
+.main-menu {
+  background: orange;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-size: 15px;
+}
+
+/* line 23, /home/wayne/profile/app/assets/stylesheets/welcome.css.scss */
+.border-layout {
+  padding-left: 0px;
+  text-align: left;
+}
+
+/* line 29, /home/wayne/profile/app/assets/stylesheets/welcome.css.scss */
+.home_container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 800px;
+  padding-bottom: 200px;
+}
+
+/* line 38, /home/wayne/profile/app/assets/stylesheets/welcome.css.scss */
+#areas {
+  top: 12px;
+  height: 10em;
+  position: relative;
+  horizontal-align: middle;
+  background: darkblue;
+  box-shadow: 10px 10px 5px darkgreen;
+}
+
+/* line 46, /home/wayne/profile/app/assets/stylesheets/welcome.css.scss */
+#areas h1 {
+  margin: 0;
+  padding-left: 150px;
+  padding-right: 50px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+/* line 55, /home/wayne/profile/app/assets/stylesheets/welcome.css.scss */
+.content {
+  font-size: 20px;
+}
+
+/* line 58, /home/wayne/profile/app/assets/stylesheets/welcome.css.scss */
+.content p {
+  font-size: 15px;
+  font-family: 'Lora', serif;
+}
+
+/* line 63, /home/wayne/profile/app/assets/stylesheets/welcome.css.scss */
+.content div li {
+  font-size: 15px;
+  font-family: 'Lora', serif;
+}
+
+/* line 68, /home/wayne/profile/app/assets/stylesheets/welcome.css.scss */
+.project_carousel {
+  font-size: 15px;
+  font-family: 'Lora', serif;
+}
+
+/* line 74, /home/wayne/profile/app/assets/stylesheets/welcome.css.scss */
+.container h2, h3 {
+  padding-left: 0px;
+  padding-right: 0px;
+  border-bottom: 1px solid #CCC;
 }
