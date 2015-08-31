@@ -3,5 +3,8 @@
  */
 //= require jQuery
 //= require bootstrap
-//= require_tree resume
+//= require 'resume/helper'
+//= require 'bootstrap.min'
+//= require 'resume/resumeBuilder.js'
+//= require_tree .
 
