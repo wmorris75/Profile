@@ -1,12 +1,7 @@
 /**
  * Created by wishclouds on 3/11/15.
  */
-//= require jquery
+//= require jQuery
 //= require bootstrap
-//= require resume/helper
-//= require resume/resumeBuilder
-
-
-/**= require_tree resume
-**/
+//= require_tree resume
 
