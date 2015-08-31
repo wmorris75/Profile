@@ -32,7 +32,7 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-
+gem 'sprockets'
 
 group :development do
     gem 'capistrano',         require: false
