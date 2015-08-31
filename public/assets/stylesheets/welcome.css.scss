@@ -1,0 +1,78 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.main-title {
+  font-style: italic;
+  font-size: 18px;
+  color: cornsilk;
+  line-height: 28px;
+  text-align: left;
+  background: darkblue;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.main-menu{
+  background:orange;
+  text-align:center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-size: 15px;
+}
+
+.border-layout{
+  padding-left: 0px;
+  text-align: left;
+}
+
+
+.home_container{
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 800px;
+  padding-bottom:200px;
+}
+
+#areas{
+    top:12px;
+    height: 10em;
+    position: relative;
+    horizontal-align:middle;
+    background:darkblue;
+    box-shadow: 10px 10px 5px darkgreen;
+     }             
+#areas h1 {
+   margin: 0;
+   padding-left:150px;
+   padding-right:50px;
+   position: absolute;              
+   top: 50%;                         
+   transform: translate(0, -50%) ;
+   }
+
+.content {
+  font-size:20px;
+}
+.content p{
+  font-size:15px;
+  font-family: 'Lora', serif;
+}
+
+.content div li{
+  font-size:15px;
+  font-family: 'Lora', serif;
+}
+
+.project_carousel{
+    font-size:15px;
+    font-family: 'Lora', serif;
+
+}
+
+.container h2, h3{
+   padding-left:0px;
+   padding-right:0px;
+   border-bottom: 1px solid #CCC; 
+}
