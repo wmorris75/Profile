@@ -30,7 +30,7 @@ Projects::Application.configure do
   config.assets.compile = true
   config.assets.precompile += %w( *.js, *.css )
   Rails.application.config.assets.precompile += ['resume/resumeBuilder.js', 'resume/helper.js', 'bootstrap.js', 'bootstrap.mim.js', 'jQuery.js', 'custom_footer.css',
-    'roll_in_animation.css', 'resume/style.css']
+    'roll_in_animation.css', 'resume/style.css', 'resume/profile_pic.jpg']
 
   # Generate digests for assets URLs.
   config.assets.digest = true
