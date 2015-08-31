@@ -3,5 +3,10 @@
  */
 //= require jquery
 //= require bootstrap
-//= require_tree resume
+//= require resume/helper
+//= require resume/resumeBuilder
+
+
+/**= require_tree resume
+**/
 
