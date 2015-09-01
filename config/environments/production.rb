@@ -28,7 +28,7 @@ Projects::Application.configure do
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = true
-  config.assets.precompile += %w( *.js, *.css )
+  config.assets.precompile += %w( *.js *.css *jpg)
   Rails.application.config.assets.precompile += ['resume/resumeBuilder.js', 'resume/helper.js', 'bootstrap.js', 'bootstrap.mim.js', 'jQuery.js', 'custom_footer.css',
     'roll_in_animation.css', 'resume/style.css', 'resume/profile_pic.jpg']
 
