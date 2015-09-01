@@ -5,5 +5,5 @@ require 'jquery'
 require 'helper.js.erb'
 require 'bootstrap.min'
 require 'resumeBuilder.js'
-//= require resume
+require 'resume'
 
