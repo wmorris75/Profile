@@ -15,7 +15,7 @@ var bio = {
     "skills":["Java,", "Ruby,", "Python,", "PHP,", "C++,", "Javascript,",  "JQuery,", "Ruby on Rails,", "HTML,", "CSS,", "Spring Framework,", "Android,",
         "MySQL,", "PostgreSQL,", "Oracle,","GoogleMap API,", "Windows,", "Linux/Unix OS and Servers,", "MongoDB,", "Amazon Web Services,",
         "Redis,", "ElasticSearch,", "REST."],
-    "biopic":"/assets/resume/profile_pic-6173ecdb284928b6683da03d5ac42b57.jpg",
+    "biopic":"/assets/resume/profile_pic-dae74e6cdeb945cb613a6e04f78ac1bc.jpg",
     "contacts": {"location" :  "Lauderhill, FL"}
 }
 
