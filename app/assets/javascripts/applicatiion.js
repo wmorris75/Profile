@@ -5,6 +5,6 @@
 //= require bootstrap
 //= require 'resume/helper'
 //= require 'bootstrap.min'
-//= require 'resume/resumeBuilder.js'
+//= require 'resume/resumeBuilder'
 //= require_tree .
 
