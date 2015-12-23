@@ -187,6 +187,8 @@ function initializeMap() {
         // center the map
         map.setCenter(bounds.getCenter());
 
+        map.setOptions({ minZoom: 4, maxZoom: 15 });
+
         //Set the zoom level of map    
         map.setZoom(5);
     }

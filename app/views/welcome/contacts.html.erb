@@ -58,6 +58,7 @@
       map: map,
       title: 'Fort Lauderdale, FL'
   });
+    map.setOptions({ minZoom: 3, maxZoom: 15 });
 
   		}
   		google.maps.event.addDomListener(window, 'load', initialize);
