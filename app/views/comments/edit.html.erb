@@ -1,14 +1,19 @@
 <%=render file: '/app/views/layouts/title-content'%>
 
-<%= form_for([@blog, @blog.comments.build]), method: :patch do |f| %>
-
-<p>
-    <%= f.label :text %><br>
-    <%= f.text_area :text %>
-  </p>
- 
+<h2>update comment:</h2>
+<%= form_for @comment, url: blog_comment_path(@comment.blog.id, @comment.id), method: :patch do |f| %>
   <p>
-    <%= f.submit "Update" %>
+    <%= f.label :commenter %><br>
+    <%= f.text_field :commenter %>
   </p>
- 
+  <p>
+    <%= f.label :body %><br>
+    <%= f.text_area :body %>
+  </p>
+  <p>
+    <%= f.submit "Edit Comment" %>
+  </p>
 <% end %>
+
+</body>
+</html>

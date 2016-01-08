@@ -13,12 +13,14 @@ Projects::Application.routes.draw do
    # get "welcome/blog"
 
   Rails.application.routes.draw do 
-    resources :blog
+    resources :blog do 
+      resources :comments
+    end
   end
 
-  resources :blog do
-    resources :comments
-  end
+  # resources :blog do
+  #   resources :comments
+  # end
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

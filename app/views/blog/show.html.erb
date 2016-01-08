@@ -11,27 +11,25 @@
   <%-# <%= @blog.text -%>
 </p>
 
-
 <h2>Comments</h2>
-<% @blog.comments.each do |comment| %>
-  <p>
-    <strong>Commenter:</strong>
-    <%= comment.commenter %>
-  </p>
- 
- <!-- Partial out these -->
-  <p>
-    <strong>Comment:</strong>
-    <%= comment.body %>
-  </p>
-
-  	
-
-	  <p>
-	  <%= link_to 'Delete Comment', [comment.blog, comment],
-	               method: :delete,
-	               data: { confirm: 'Are you sure?' } %>
-	</p>
+	<% @blog.comments.each do |comment| %>
+		  <p>
+		    <strong>Commenter:</strong>
+		    <%= comment.commenter %>
+		  </p>
+		 
+		 <!-- Partial out these -->
+		  <p>
+		    <strong>Comment:</strong>
+		    <%= comment.body %>
+		  </p>
+		  <p>
+		       
+	         <%= link_to 'update', edit_blog_comment_path(comment.blog.id, comment.id)%>
+	         <%= link_to 'Delete Comment', [comment.blog, comment],
+		               method: :delete,
+		               data: { confirm: 'Are you sure?' } %>
+		 </p>
 <% end %>
 
 
@@ -48,7 +46,7 @@
     <%= f.text_area :body %>
   </p>
   <p>
-    <%= f.submit %>
+    <%= f.submit "Add Comment" %>
   </p>
 <% end %>
 

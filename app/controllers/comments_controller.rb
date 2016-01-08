@@ -1,6 +1,11 @@
 class CommentsController < ApplicationController
 	http_basic_authenticate_with name: "dhh", password: "secret", only: :destroy
 
+	def show
+		@blog = @blog = Blog.find(params[:blog_id])
+		@comment = @blog.comments.find(params[:id])
+	end
+
 	def create
 		@blog = Blog.find(params[:blog_id])
     	@comment = @blog.comments.create(comment_params)
@@ -18,7 +23,7 @@ class CommentsController < ApplicationController
 		if @comment.update(comment_params)		
 			redirect_to blog_path(@blog)
 		else
-			render 'edit'
+			render 'edit_blog_comment'
 		end
 	end
 
