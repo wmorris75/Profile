@@ -1,0 +1,53 @@
+<%=render file: '/app/views/layouts/title-content'%>
+	<h1>Create New Article</h1>
+	<div class="container">
+		<%= form_for :blog, url: blog_index_path do |f| %>
+
+		<% if @blog.errors.any? %>
+		    <div id="error_explanation">
+		      <h2>
+		        <%= pluralize(@blog.errors.count, "error") %> prohibited
+		        this article from being saved:
+		      </h2>
+		      <ul>
+		        <% @blog.errors.full_messages.each do |msg| %>
+		          <li><%= msg %></li>
+		        <% end %>
+		      </ul>
+		    </div>
+	  	<% end %>
+		
+
+
+		  <p>
+		    <%= f.label :title  %><br>
+		    <%= f.text_field :title %>
+		  </p>
+		 
+		 <p>Tags</p>
+		 <!-- <select action=f>
+		 	<option></option>
+		 	<option>Software Engineering</option>
+		 	<option>Data Science</option>
+		 	<option>Ruby</option>
+		 	<option>Other</option>
+		 </select> -->
+		 <%= select_tag(:option, options_for_select([['', 1], ['Software Engineering', 2], 
+		 ['Data Science', 3], ['Ruby', 4]],   :selected => :option )) %>
+
+
+
+		  <p>
+		    <%= f.label :text %><br>
+		    <%= f.text_area :text %>
+		  </p>		 
+
+		  <p>
+		    <%= f.submit "Post" %>
+		  </p>
+		<% end %>
+	</div>
+
+<%= link_to 'Back to Blog Main Page', blog_index_path %>
+
+<%=render file: '/app/views/layouts/footer-content'%>

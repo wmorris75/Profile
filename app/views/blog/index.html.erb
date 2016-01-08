@@ -1,0 +1,28 @@
+<%=render file: '/app/views/layouts/title-content'%>
+	<div class="home_container">
+		<div class="blog_container">
+			<h2>List of Articles</h2>
+			<table>
+			  <tr>
+			    <!-- <th>Title</th> -->
+			    <!-- <th>Text</th> -->
+			  </tr>
+
+
+			 
+			  <% @blog.each do |article| %>
+			    <tr>
+			      <%-# <td><%= article.title </td>- %>
+			      <td><%= link_to article.title, blog_path(article) %></td>
+			      <td><%= link_to 'Edit', edit_blog_path(article) %></td>
+			      <td><%= link_to 'Delete', blog_path(article),
+			              method: :delete,
+			              data: { confirm: 'Are you sure?' } %></td>
+			    </tr>
+			  <% end %>
+			</table>
+			<p><b><%=link_to "Create New Article", new_blog_path%></b></p>
+		</div>
+	</div>
+
+<%=render file: '/app/views/layouts/footer-content'%>

@@ -10,8 +10,15 @@ Projects::Application.routes.draw do
    get "welcome/contacts"
    get "welcome/projects"
    get "welcome/resume"
-   get "welcome/blog"
+   # get "welcome/blog"
 
+  Rails.application.routes.draw do 
+    resources :blog
+  end
+
+  resources :blog do
+    resources :comments
+  end
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

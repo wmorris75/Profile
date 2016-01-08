@@ -1,0 +1,60 @@
+<%=render file: '/app/views/layouts/title-content'%>
+<h2>List of Articles</h2>
+<p>
+  <strong>Title:</strong>
+  <%= @blog.title %>
+</p>
+ 
+<p>
+  <strong>Text:</strong>
+  <%=simple_format h @blog.text %>
+  <%-# <%= @blog.text -%>
+</p>
+
+
+<h2>Comments</h2>
+<% @blog.comments.each do |comment| %>
+  <p>
+    <strong>Commenter:</strong>
+    <%= comment.commenter %>
+  </p>
+ 
+ <!-- Partial out these -->
+  <p>
+    <strong>Comment:</strong>
+    <%= comment.body %>
+  </p>
+
+  	
+
+	  <p>
+	  <%= link_to 'Delete Comment', [comment.blog, comment],
+	               method: :delete,
+	               data: { confirm: 'Are you sure?' } %>
+	</p>
+<% end %>
+
+
+
+ 
+<h2>Add a comment:</h2>
+<%= form_for([@blog, @blog.comments.build]) do |f| %>
+  <p>
+    <%= f.label :commenter %><br>
+    <%= f.text_field :commenter %>
+  </p>
+  <p>
+    <%= f.label :body %><br>
+    <%= f.text_area :body %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
+
+<%= link_to 'Edit', edit_blog_path(@blog) %>
+<%= link_to 'Back to Blog Main Page', blog_index_path %>
+<%-#=render file: '/app/views/layouts/footer-content'-%>
+</body>
+</html>

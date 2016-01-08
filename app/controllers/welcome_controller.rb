@@ -12,8 +12,8 @@ class WelcomeController < ApplicationController
   def projects
   end
 
-  def blog
-  end
+  # def blog
+  # end
 
   def resume
   end
