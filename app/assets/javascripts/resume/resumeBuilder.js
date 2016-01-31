@@ -14,9 +14,9 @@ var bio = {
     "github":"wmorris75",
     "skills":["Java,", "Ruby,", "Python,", "PHP,", "C++,", "Javascript,",  "JQuery,", "Ruby on Rails,", "HTML,", "CSS,", "Spring Framework,", "Android,",
         "MySQL,", "PostgreSQL,", "Oracle,","GoogleMap API,", "Windows,", "Linux/Unix OS and Servers,", "MongoDB,", "Amazon Web Services,",
-        "Redis,", "ElasticSearch,", "REST."],
+        "Redis,", "ElasticSearch,", "REST,", "Project Management,", "Microsoft Projects,", "Microsoft Visio."],
     "biopic":"/assets/resume/profile_pic-dae74e6cdeb945cb613a6e04f78ac1bc.jpg",
-    "contacts": {"location" :  "Lauderhill, FL"}
+    "contacts": {"location" :  "Fort Lauderdale, FL"}
 }
 
 var formattedName = HTMLheaderName.replace("%data%", bio.name);
@@ -98,6 +98,20 @@ for(school in education.schools){
 var work = {
 
     "jobs":[
+        {
+            "employer":"71 Pounds",
+            "title": "Software Engineer - Automation",
+            "dates":"September 2015 - Present",
+            "description": {"duties":[
+                "Design and implement program applications for automating business processes to improve efficiency and productivity. "+
+                "This involves the addition of new applictions, enhancements and features based on business requirements. ",
+                "Maintenance and upkeep of the code base which involves code review, code refactoring and developing new ways to improve performance. ",
+                "Maintain the backend functionalities associated with the EC2 Amazon web services. " , 
+                "Liaise with operations and product personnel for obtaining application requirements."
+                    
+            ]},
+            "contacts": {"location" :  "Davie, FL"}
+        },
         {
             "employer":"Wishclouds/Commerce Datascience",
             "title": "Software Developer",

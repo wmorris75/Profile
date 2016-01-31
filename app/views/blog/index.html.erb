@@ -1,7 +1,11 @@
 <%=render file: '/app/views/layouts/title-content'%>
+ <% if flash[:notice] %>
+    <div class="notice"><b><%= flash[:notice] %></b></div>
+  <% end %>
+
 	<div class="home_container">
 		<div class="blog_container">
-			<h2>List of Articles</h2>
+			<h2>Blogs</h2>
 			<table>
 			  <tr>
 			    <!-- <th>Title</th> -->

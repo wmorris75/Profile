@@ -11,7 +11,9 @@ class BlogController < ApplicationController
 	end
 
 	def new
-		@blog = Blog.new
+		# @blog = Blog.new
+		flash[:notice] = "Blog under construction. Coming soon!"
+		redirect_to blog_index_path
 	end
 
 	def edit
