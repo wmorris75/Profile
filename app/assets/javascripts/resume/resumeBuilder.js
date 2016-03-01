@@ -100,7 +100,7 @@ var work = {
     "jobs":[
         {
             "employer":"71 Pounds",
-            "title": "Software Engineer - Automation",
+            "title": "Software Engineer",
             "dates":"September 2015 - Present",
             "description": {"duties":[
                 "Design and implement program applications for automating business processes to improve efficiency and productivity. "+
