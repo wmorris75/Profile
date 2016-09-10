@@ -103,28 +103,34 @@ var work = {
             "title": "Software Engineer",
             "dates":"September 2015 - Present",
             "description": {"duties":[
-                "Design and implement program applications for automating business processes to improve efficiency and productivity. "+
-                "This involves the addition of new applictions, enhancements and features based on business requirements. ",
-                "Maintenance and upkeep of the code base which involves code review, code refactoring and developing new ways to improve performance. ",
-                "Maintain the backend functionalities associated with the EC2 Amazon web services. " , 
-                "Liaise with operations and product personnel for obtaining application requirements."
+                                        "Implemented server resource management strategies to manage processes and ensure reliable execution and delivery of all the application processes.",
+                                        "Improved the application download performance from a process which usually took hours to complete  in minutes.",
+                                        "Developed and implemented the front-end for managing all the application processes.",
+                                        "Developed programs and applications which resulted in increased revenues for the company",
+                                        "Redesign and Refactor applying design patterns for easy feature enhancements and maintenance",
+                                        "Design, architect and implement program applications which improved the business process for efficiency and high productivity utilizing python and ruby on rails as programming framework.",
+                                        "Cloud management of all the servers including the database and queuing infrastructure and our app servers utilizing AWS services.",
+                                        "Implementing system administration tasks including, the implementation of database backup, server restoration and security features to ensure reliability in the company's operations. "
+                
                     
-            ]},
+                                    ]},
             "contacts": {"location" :  "Davie, FL"}
         },
         {
             "employer":"Wishclouds/Commerce Datascience",
             "title": "Software Developer",
-            "dates":"September 2014 - March 2015",
+            "dates":"September 2014 - July 2015",
             "description": {"duties":[
-                "Achieved a milestone of successfully improving the Crawler System operations from 54% to over 90%.",
-                    "Utilize Linux/Unix OS and its tools to troubleshoot and maintain the efficient running of servers of the Amazon Web." +
-                    "Services including EC2, DynamDB, S3 and SQS.",
-                "Interacting daily with MongoDB to perform CRUD operations on the Crawler System as necessary.",
-                    "Write, implement and maintain existing and new crawlers which run on various framework including" +
-                    "Ruby on Rails, AWS, Scala API, Redis, and Beanstalkd.",
-                "Utilizes web crawling tools including Nokogiri, Phantomjs, Mechanize and Capybara webkit."
-            ]},
+                                        "Successfully improving the Web Crawler System from 54% functionality to over 90% functionality",
+                                        "Improved the efficiency of the crawler system database operations by implementing more efficient techniques to insert, delete, update and query data based on AWS DynamoDB operations.",
+                                        "Cloud management of the Crawler Infrastructure utilizing AWS services which includes MongoDB, Redis, ElasticSearch, SQS and EC2.",
+                                        "Troubleshoot and resolve issues from a system and component perspective.",
+                                        "Developed scripts to resolve issues with the crawler system such as: developing regular expressions to extract particular data, developing query, update and delete operations to target modifying specific data in MongoDB. ",
+                                        "Troubleshooting and resolving issues with the Linux based servers.",
+                                        "Developing and implementing shell scripts to monitor server processes.",
+                                        "Utilized web crawling tools including Nokogiri, Phantomjs, Mechanize and Capybara webkit.",
+                                        "Offer technical support in the planning, designing and implementation of new software technologies"
+                                    ]},
             "contacts": {"location" :  "Boca Raton, FL"}
         },
         {
