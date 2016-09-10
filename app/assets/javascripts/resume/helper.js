@@ -47,6 +47,7 @@ var HTMLcertificationsStart = '<div class="certifications-entry"></div>';
 var HTMLorganization ='<a href="#">%data%';
 var HTMLdate = ' -- %data%</a>';
 var HTMLcertTitle = '%data%';
+var HTMLcourses= '<li>%data%</li>'
 
 
 var HTMLonlineClasses = '<h3>Online Classes</h3>';

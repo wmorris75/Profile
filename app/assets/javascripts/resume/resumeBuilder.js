@@ -12,7 +12,7 @@ var bio = {
     "mobile": "954-864-7655",
     "email": "waynemorris75@gmail.com",
     "github":"wmorris75",
-    "skills":["Java,", "Ruby,", "Python,", "PHP,", "C++,", "Javascript,",  "JQuery,", "Ruby on Rails,", "HTML,", "CSS,", "Spring Framework,", "Android,",
+    "skills":["Java,", "Ruby,", "Python,", "R,", "C++,", "Javascript,",  "JQuery,", "Ruby on Rails,", "HTML,", "CSS,", "Spring Framework,", "Android,",
         "MySQL,", "PostgreSQL,", "Oracle,","GoogleMap API,", "Windows,", "Linux/Unix OS and Servers,", "MongoDB,", "Amazon Web Services,",
         "Redis,", "ElasticSearch,", "REST,", "Project Management,", "Microsoft Projects,", "Microsoft Visio."],
     "biopic":"/assets/resume/profile_pic-dae74e6cdeb945cb613a6e04f78ac1bc.jpg",
@@ -193,73 +193,16 @@ function displayWork(){
 }
 displayWork();
 
-// var projects = {
-//     "projects":[
-
-//         {
-//             "title":"waynemorris.com",
-//             "dates":"March 2015",
-//             "description":"waynemorris.com is built with the Ruby on Rails framework. It was a project that was developed to highlight my skills " +
-//                 "as a software developer and to show case my professional experience which includes " +
-//                 "project management, professional consulting, engineering and software developmet.",
-//             "images":[]
-//         },
-
-//         {
-//             "title": "Thesis project: A Hierarchical Framework for Estimating Heterogeneous " +
-//                 "Architecture Based Software Reliability",
-//             "dates": "August 2014",
-//             "description":"This project details the proposal of a mathematical model using Discrete Time Markov's Chain (DTMC) " +
-//                 "to determine software reliability based on the reliability of individual software components within a system. " +
-//                 "The proposed model takes into consideration the heterogeneity of the different software systems, which includes: " +
-//                 "Batch-Sequential/Pipeline Architectural Style, Parellel-Pipe style, Fault Tolerance and Call and Return Architecture style." +
-//                 "Each architectural style was mathematically modelled for which the DTMC was applied to each software system components based on its "+
-//                 "architectural style to determine reliability of the overall software system",
-//             "images":[
-//                 "/assets/project/fault_tolerance_image.jpg"
-//             ]
-//         },
-//         {
-//             "title":"Campus Navigation System(CNS)",
-//             "dates":"May 2012",
-//             "description": "Developed an application using the GoogleMap API for users to conveniently navigate and locate buildings and departments " +
-//                 "on the Andrews University Campus. Sample screen shots of the application are provided below.",
-//             "images":["/assets/project/main.jpg", "/assets/project/tracking.jpg", "/assets/project/view_submenu.png", "/assets/project/view_submenu_options.png",
-//                 "/assets/project/running_ad.png", "/assets/project/real_time_geotracking.png", "/assets/project/finding_dest_path.png",
-//                 "/assets/project/geo_position.png"]
-//         }]
-// }
-
-
-
-// projects.display = function () {
-//     for(project in projects.projects){
-//         $("#projects").append(HTMLprojectStart);
-
-//         var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
-//         //last makes sure its added to the last html element
-//         $(".project-entry:last").append(formattedTitle);
-
-//         var formattedDates = HTMLprojectDates.replace("%data%", projects.projects[project].dates);
-//         $(".project-entry:last").append(formattedDates);
-
-//         var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[project].description);
-//         $(".project-entry:last").append(formattedDescription);
-
-//         if (projects.projects[project].images.length > 0){
-//             for(image in projects.projects[project].images){
-//                 var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[project].images[image]);
-//                 $(".project-entry:last").append(formattedImage);
-//             }
-//         }
-
-//     }
-// }
-
-// projects.display();
-
 var certifications = {
     "certification":[
+        {
+            "title":"Data Science Specialization: Data Engineering, Multivariate Regression Models, Logistic Regression and Machine Learning<br><b>Courses Completed:<b>",
+            "dates":"October 2016",
+            "organization":"Coursera",
+            "images":["Data Science Toolbox", "R Programming", "Getting and Cleaning Data", "Exploratory Analysis", 
+                    "Reproducible Research", "Statistical Inference", "Regression Models",
+                    "Practical Machine Learning", "Developing Data Products", "Capstone Project(in-progress)"]
+        },
 
         {
             "title":"Programming Cloud Services for Android Handheld Systems",
@@ -289,7 +232,6 @@ var certifications = {
 }
 
 
-
 certifications.display = function () {
     for(cert in certifications.certification){
         $("#certifications").append(HTMLcertificationsStart);
@@ -304,6 +246,10 @@ certifications.display = function () {
         var formattedTitle = HTMLcertTitle.replace("%data%", certifications.certification[cert].title);
         //last makes sure its added to the last html element
         $(".certifications-entry:last").append(formattedTitle);
+        for( image in certifications.certification[cert].images){
+            var getImage = HTMLcourses.replace("%data%", certifications.certification[cert].images[image]);
+            $(".certifications-entry").append(getImage);
+        }
 
     }
 }
