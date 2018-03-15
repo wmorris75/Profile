@@ -9,12 +9,12 @@
 var bio = {
     "name": "Wayne Morris, MSc., B.Eng.",
     "role": "Engineer",
-    "mobile": "954-864-7655",
+    "mobile": "954-479-4641",
     "email": "waynemorris75@gmail.com",
     "github":"wmorris75",
-    "skills":["Java,", "Ruby,", "Python,", "R,", "C++,", "Javascript,",  "JQuery,", "Ruby on Rails,", "HTML,", "CSS,", "Spring Framework,", "Android,",
+    "skills":["Java,", "Ruby,", "Python,", "R,", "C++,", "Django,", "Javascript, ReactJS, AngularJS,",  "JQuery,", "Ruby on Rails,", "HTML,", "CSS,", "Spring Framework,", "Android,",
         "MySQL,", "PostgreSQL,", "Oracle,","GoogleMap API,", "Windows,", "Linux/Unix OS and Servers,", "MongoDB,", "Amazon Web Services,",
-        "Redis,", "ElasticSearch,", "REST,", "Project Management,", "Microsoft Projects,", "Microsoft Visio."],
+        "Redis,", "REST,", "Project Management,", "Microsoft Projects."],
     "biopic":"/assets/resume/profile_pic-dae74e6cdeb945cb613a6e04f78ac1bc.jpg",
     "contacts": {"location" :  "Fort Lauderdale, FL"}
 }
@@ -99,9 +99,26 @@ var work = {
 
     "jobs":[
         {
+            "employer":"Charter Schools USA",
+            "title": "Application Developer/Data Scientist",
+            "dates":"February 2017 - Present",
+            "description": {"duties":[
+
+                                        "Developed in-house software applications to support the business processes using Python/Django Framework and Powershell.",
+                                        "Implemented the data architecture for the company’s data warehouse.",
+                                        "Using SnapLogic and Python to develop automated solutions for the ETL processes to maintain data quality, integrity and consistency.",
+                                        "Working with machine learning algorithms to develop data integration solutions in the data warehouse.",
+                                        "Coordinated with various vendors in setting up data sources to support our ETL process.",
+                                        "Performed data exploration and analysis using Tableau."                                       
+                
+                    
+                                    ]},
+            "contacts": {"location" :  "Fort Lauderdale, FL"}
+        },    
+        {
             "employer":"71 Pounds",
             "title": "Software Engineer",
-            "dates":"September 2015 - Present",
+            "dates":"September 2015 - January 2017",
             "description": {"duties":[
                                         "Implemented server resource management strategies to manage processes and ensure reliable execution and delivery of all the application processes.",
                                         "Improved the application download performance from a process which usually took hours to complete  in minutes.",
